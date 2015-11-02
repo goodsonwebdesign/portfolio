@@ -12,7 +12,8 @@ This website is to showcase my proficiency with the technologies desired in the 
 3. Open Visual Studio, File -> Open -> Website and then open the folder you just created with the command
 
 ## Creating a Feature Branch
-1. Create your feature branch: `git branch my-first-feature-branch`
+1. In the Command Prompt, Navigate to the folder you just created: `cd myCustomFolderName`
+2. Create your feature branch: `git branch my-first-feature-branch`
 
 ## Making Changes
 1. Make your changes as normal and once you are done then stage them to be committed: `git add .`
