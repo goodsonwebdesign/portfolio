@@ -1,1 +1,38 @@
-# portfolio
+
+
+# Brandon E. Goodson
+
+This website is to showcase my proficiency with the technologies desired in the Web Design and Developement industry today. I feel that showing what you can do has a far greater impact than saying what you can do.
+
+
+## Get Started
+
+1. Open a Command Prompt
+1. Clone the repository into a folder: `git clone https://github.com/goodsonwebdesign/portfolio.git myCustomFolderName`
+2. Open Visual Studio, File -> Open -> Website and then open the folder you just created with the command
+3. Create your feature branch: `git checkout -b origin my-first-feature`
+4. Make your changes and Commit your changes with a comment: `git commit -am 'Add some feature'`
+5. Push to the branch: `git push origin my-new-feature`
+
+
+
+## Pull the latest code into your branch
+
+'git pull origin master'
+
+
+## Merging Code into Master
+
+1. Commit your changes and Comment: `git commit -am 'Merging in some features'`
+2. Pull down the latest: `git pull origin master`
+3. Resolve conflicts (if any)
+4. Push to the branch: `git push origin master`
+
+
+## Merge Conflicts and Resolving Them
+
+These happen when two people tried to change the same code and the auto merger can't figure it out.
+Resolve them by finding the files that are now conflicting and delete the code that is no longer relevant and save.
+Once conflicts are resolved, you can push.
+
+
