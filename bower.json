@@ -1,0 +1,23 @@
+{
+  "name": "WebSite1",
+  "version": "0.0.0",
+  "authors": [
+    "goodsonwebdesign <goodsonwebdesign@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

@@ -1,0 +1,100 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+.switch-panel {
+    background-color: darkslategrey;
+    box-shadow: inset 0px -5px 17px 0px #FFFEFE, inset 0px -9px 0px 0px black, inset 0px -9px 36px 0px black;
+    height: 80px;
+    position:relative;
+    z-index:0;
+  
+}
+
+.switch-container {
+    margin-top: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+.switch {
+
+  display: block;
+    position: relative;
+    width: 22px;
+    height: 38px;
+    border-radius: 50px;
+    background: #e6e3da;
+    background: linear-gradient(#e6e3da, #ffffff);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 7px 0 #fdfdfd, 0 2px 3px rgba(170, 160, 140, 0.3);
+    cursor: pointer;
+}
+
+.switch:before{
+     content: "";
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -5px;
+    right: -5px;
+    z-index: -1;
+    background: #f2f1ed;
+    border-radius: inherit;
+    box-shadow: 0 1px 1px rgba(174, 163, 145, 0.2), 0 3px 3px rgba(170, 160, 140, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 0 5px rgba(170, 160, 140, 0.5);
+}
+
+.switch:after {
+  content: "";
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-filter: blur(1px);
+}
+.fixture1 {
+    z-index: 1;
+    position: relative;
+    left:25px;
+}
+
+.fixture2 {
+    z-index: 1;
+    position: relative;
+    right:25px;
+}
+.switch-on{
+  background: linear-gradient(#f7f6f4, #ffffff);
+    box-shadow: inset 0 -5px 0 #dbd3c8, 0 2px 6px rgba(170, 160, 140, 0.75), 3px 0px 1px rgba(170, 160, 140, 0.3);
+    border-bottom: none;
+    
+}
+.lamps-on{
+    box-shadow: 0px 6px 7px white; 
+}
+.bulb {
+    width: 200px;
+    height: 4px;
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    top: 20px;
+    z-index: 0;
+    background-color: white;
+  
+}
+
+.bulb-2 {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    z-index: 0;
+    left: 99px;
+    top: 40px;
+    background: white;
+    border-radius: 60px / 30px;
+    
+}
+.switch-panel-control{
+    background-color:darkslategrey;
+    padding:5px;
+}

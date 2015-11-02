@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Goodson Consulting</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="styles/switchpanel.css">
+    <link rel="stylesheet" type="text/css" href="bower/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="bower/bootstrap/dist/css/bootstrap.css">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400italic&subset=latin,latin-ext'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
+</head>
+<body ng-app="app">
+<div class="container-fluid" ng-controller="mainctrl">
+    <div class="row switch-panel collapse" id="switch-panel">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2">
+            <div class="switch-container col-lg-3" ng-click="flipSwitch('lamps')">
+
+                <span ng-model="switches.lamps" class="switch" ng-class="switches.lamps ? 'switch-on' : ''"></span>
+            </div>
+
+        </div>
+        <div class="col-lg-5"></div>
+
+
+    </div>
+    <div class="row switch-panel-control">
+        <button class="btn custom-button" type="button" data-toggle="collapse" data-target="#switch-panel"
+                aria-expanded="false" aria-controls="collapseExample">
+            <span>Demo</span>&nbsp;<span><i class="fa fa-play-circle-o"></i></span>
+
+        </button>
+    </div>
+    <div class="page-main row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div ng-include="'partials/navbar/diamondpartial.html'"></div>
+                <div ng-include="'partials/logo/logo-row.html'"></div>
+                <div ng-include="'partials/logo/logo-mirror-row.html'"></div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+    </div>
+    <div class="row nav-row">
+        <div ng-include="'partials/navbar/navpartial.html'"></div>
+    </div>
+    <div class="row view-portal-row">
+        <div class="col-lg-12 no-padding">
+            <div class="col-lg-2 no-padding hidden-md hidden-sm hidden-xs"
+                 ng-include="'partials/column1/column1.html'"></div>
+            <div class="col-lg-1 no-padding hidden-md hidden-sm hidden-xs"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding "
+                 ng-include="'partials/viewportal/viewportal.html'"></div>
+            <div class="col-lg-1 no-padding hidden-md hidden-sm hidden-xs"></div>
+
+            <div class="col-lg-2 no-padding hidden-md hidden-sm hidden-xs"
+                 ng-include="'partials/column2/column2.html'"></div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding" ng-include="'partials/footer/footer.html'"></div>
+    </div>
+
+</div>
+<script src="bower/angular/angular.js" type="text/javascript"></script>
+<script src="app.js" type="text/javascript"></script>
+<script src="bower/jquery/dist/jquery.js" type="text/javascript"></script>
+<script src="bower/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+
+</body>
+</html>
