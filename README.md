@@ -26,7 +26,7 @@ This website is to showcase my proficiency with the technologies desired in the 
 2. From Feature Branch: `git pull origin my-first-feature-branch`
 
 
-## Merging Code into Master
+## Merging your Feature Branch into Master
 
 1. Check out Master: `git checkout master`
 2. Pull down the latest: git pull origin master`
