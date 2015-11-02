@@ -10,8 +10,8 @@ This website is to showcase my proficiency with the technologies desired in the 
 1. Open a Command Prompt
 1. Clone the repository into a folder: `git clone https://github.com/goodsonwebdesign/portfolio.git myCustomFolderName`
 2. Open Visual Studio, File -> Open -> Website and then open the folder you just created with the command
-3. Create your feature branch: `git checkout -b origin my-first-feature`
-4. Make your changes and Commit your changes with a comment: `git commit -am 'Add some feature'`
+3. Create your feature branch: `git branch my-first-feature-branch`
+4. Make your changes and Commit your changes with a comment: `git commit -m 'Add some feature'`
 5. Push to the branch: `git push origin my-new-feature`
 
 
