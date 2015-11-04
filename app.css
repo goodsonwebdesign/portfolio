@@ -1099,3 +1099,8 @@ ul {
 .custom-button:hover {
     background: antiquewhite !important;
 }
+.footer-image {
+    height: 110px;
+    margin-top: 60px;
+
+}
