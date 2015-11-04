@@ -30,7 +30,7 @@ This website is to showcase my proficiency with the technologies desired in the 
 ## Merging your Feature Branch into Master
 
 1. Check out Master: `git checkout master`
-2. Pull down the latest: git pull origin master`
+2. Pull down the latest: `git pull origin master`
 3. Merge your feature branch into master: `git merge my-first-feature-branch`
 4. Push to master: `git push origin master`
 
