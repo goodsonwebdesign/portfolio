@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Goodson Consulting</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="app.css">
     <link rel="stylesheet" type="text/css" href="styles/switchpanel.css">
     <link rel="stylesheet" type="text/css" href="bower/font-awesome/css/font-awesome.css">
@@ -13,62 +13,82 @@
           type='text/css'>
 </head>
 <body ng-app="app">
-<div class="container-fluid" ng-controller="mainctrl">
-    <div class="row switch-panel collapse" id="switch-panel">
-        <div class="col-lg-5"></div>
-        <div class="col-lg-2">
-            <div class="switch-container col-lg-3" ng-click="flipSwitch('lamps')">
+    <div class="container-fluid" ng-controller="mainctrl">
+        <div class="row switch-panel collapse" id="switch-panel">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2">
+                <div class="switch-container col-lg-3" ng-click="flipSwitch('lamps')">
+                    <div>
+                        <span ng-model="switches.lamps" class="switch" ng-class="switches.lamps ? 'switch-on' : ''"></span>
+                        <h4>
+                            <b style="color: white; margin: 0px 0 0 -18px;">Lamps</b>
+                        </h4>
+                    </div>
+                </div>
+                <div class="switch-container col-lg-3" ng-click="flipSwitch('lamps')">
+                    <div>
+                        <span ng-model="switches.doors" class="switch" ng-class="switches.doors ? 'switch-on' : ''"></span>
+                        <h4>
+                            <b style="color: white; margin: 0px 0 0 -12px;">Doors</b>
+                        </h4>
+                    </div>
+                </div>
+                <div class="switch-container col-lg-3" ng-click="flipSwitch('')">
+                    <div>
+                        <span ng-model="switches.music" class="switch" ng-class="switches.music ? 'switch-on' : ''"></span>
+                        <h4>
+                            <b style="color: white; margin: 0px 0 0 -12px;">Music</b>
+                        </h4>
+                    </div>
+                </div>
 
-                <span ng-model="switches.lamps" class="switch" ng-class="switches.lamps ? 'switch-on' : ''"></span>
             </div>
+            <div class="col-lg-5"></div>
+
 
         </div>
-        <div class="col-lg-5"></div>
+        <div class="row switch-panel-control">
+            <button class="btn custom-button" type="button" data-toggle="collapse" data-target="#switch-panel"
+                    aria-expanded="false" aria-controls="collapseExample" style="width:9%;">
+                <span>Switch Panel</span>&nbsp;
 
+            </button>
+        </div>
+        <div class="page-main row">
+            <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
+            <div class="page-main-logo col-lg-4 col-md-4 col-sm-8 col-xs-8">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="images/goodsonlogo.png" style="width:550px; height:200px; margin-left:-200px;" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
+        </div>
+        <div class="row nav-row">
+            <div ng-include="'partials/navbar/navpartial.html'"></div>
+        </div>
+        <div class="row view-portal-row">
+            <div class="col-lg-12 no-padding">
+                <div class="col-lg-2 no-padding hidden-md hidden-sm hidden-xs"
+                     ng-include="'partials/column1/column1.html'"></div>
+                <div class="col-lg-1 no-padding hidden-md hidden-sm hidden-xs"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding "
+                     ng-include="'partials/viewportal/viewportal.html'"></div>
+                <div class="col-lg-1 no-padding hidden-md hidden-sm hidden-xs"></div>
 
-    </div>
-    <div class="row switch-panel-control">
-        <button class="btn custom-button" type="button" data-toggle="collapse" data-target="#switch-panel"
-                aria-expanded="false" aria-controls="collapseExample">
-            <span>Demo</span>&nbsp;<span><i class="fa fa-play-circle-o"></i></span>
+                <div class="col-lg-2 no-padding hidden-md hidden-sm hidden-xs"
+                     ng-include="'partials/column2/column2.html'"></div>
 
-        </button>
-    </div>
-    <div class="page-main row">
-        <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
-        <div class="page-main-logo col-lg-4 col-md-4 col-sm-8 col-xs-8">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <img src="images/goodsonlogo.png" style="width:550px; height:200px; margin-left:-200px;" />
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2"></div>
-    </div>
-    <div class="row nav-row">
-        <div ng-include="'partials/navbar/navpartial.html'"></div>
-    </div>
-    <div class="row view-portal-row">
-        <div class="col-lg-12 no-padding">
-            <div class="col-lg-2 no-padding hidden-md hidden-sm hidden-xs"
-                 ng-include="'partials/column1/column1.html'"></div>
-            <div class="col-lg-1 no-padding hidden-md hidden-sm hidden-xs"></div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding "
-                 ng-include="'partials/viewportal/viewportal.html'"></div>
-            <div class="col-lg-1 no-padding hidden-md hidden-sm hidden-xs"></div>
-
-            <div class="col-lg-2 no-padding hidden-md hidden-sm hidden-xs"
-                 ng-include="'partials/column2/column2.html'"></div>
-
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding" ng-include="'partials/footer/footer.html'"></div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding" ng-include="'partials/footer/footer.html'"></div>
-    </div>
 
-</div>
-<script src="bower/angular/angular.js" type="text/javascript"></script>
-<script src="app.js" type="text/javascript"></script>
-<script src="bower/jquery/dist/jquery.js" type="text/javascript"></script>
-<script src="bower/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    </div>
+    <script src="bower/angular/angular.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="bower/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="bower/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
 
 </body>
 </html>
