@@ -13,7 +13,6 @@
 
 .diamond-logo {
     position: relative;
-
     transform: scale(.25, .25);
 }
 
@@ -640,6 +639,7 @@ a, a:hover, a:focus {
     height: 500px;
     background-color: darkslategrey;
     z-index: -1;
+    margin: 0 0 0 -55px;
 }
 
 .snapshot-3 {
@@ -648,6 +648,7 @@ a, a:hover, a:focus {
     background-color: darkslategrey;
     z-index: -2;
 }
+
 
 .light-1 {
     width: 200px;
@@ -682,12 +683,13 @@ a, a:hover, a:focus {
     font-size: 11pt;
     color: white;
     text-decoration: none;
-    box-shadow: inset 0px 0px 27px 5px black, 0px 4px 40px 10px black;
     height: 400px;
     border-radius: 5px;
     padding: 20px;
-    max-width: 300px;
-    margin-top: 28px;
+    width: 300px;
+    position: relative;
+    margin: 37px 0 0 67px;
+    box-shadow: inset 0px 1px 23px 4px #403E3E, inset 0px 0px 12px 4px black, 0px 0px 0px 2px black;
 }
 
 .personal-information-title {
@@ -700,13 +702,13 @@ a, a:hover, a:focus {
 
 .personal-information-body {
     font-size: 12pt;
-    background: #1D4B4B;
+    background: darkslategrey;
     margin-top: 5px;
-    box-shadow: inset 0px 0px 12px 2px #547575, 0px 0px 8px 1px #1F3A3A;
     border-radius: 5px;
     padding: 13px;
     height: 76%;
     width: 95%;
+    text-align: center;
 }
 
 ul {
@@ -1011,12 +1013,13 @@ ul {
 }
 
 .picture-frame {
-    box-shadow: inset 0px 0px 27px 5px black, 0px 4px 40px 10px black;
+    box-shadow: inset 0px 1px 23px 4px #403E3E, inset 0px 0px 12px 4px black, 0px 0px 0px 2px black;
     height: 400px;
     border-radius: 5px;
     padding: 20px;
-    max-width: 300px;
-    margin-top: 28px;
+    position: relative;
+    width: 300px;
+    margin-top: 23px;
 }
 
 .picture-container {
