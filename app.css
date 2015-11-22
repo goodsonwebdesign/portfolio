@@ -500,6 +500,7 @@
 
 .hide-scrollbar-parent {
     overflow: hidden !important;
+    margin: -1px 0 0 0;
 }
 
 .hide-scrollbar-child {
@@ -886,7 +887,7 @@ ul {
     -ms-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
-    box-shadow: inset 5px 0px 35px 5px black;
+    
 }
 
 
@@ -903,7 +904,7 @@ ul {
     -ms-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
-    box-shadow: inset -5px 0px 35px 5px black;
+    
 }
 
 
@@ -1091,13 +1092,13 @@ ul {
 .left-img-g {
     float: right;
     position: relative;
-    top: 175px;
+    top: 115px;
 }
 
 .right-img-g {
     float: left;
     position: relative;
-    top: 175px;
+    top: 115px;
 }
 
 .center-text {
